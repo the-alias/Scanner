@@ -52,6 +52,9 @@ def cli(inp):
 def main():
 	user_input=' '.join(sys.argv)
 	ips,ports=target_parser(user_input)
+	if ips=="Error":
+		print("No targets specified",help_msg)
+		sys.exit()
 	ping_live,ping_dead = check_alive_ping(ips)
 	print(ping_live,ping_dead)
 	sample_live,sample_dead = check_alive_sample(ping_dead,2)
