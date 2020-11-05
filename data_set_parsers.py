@@ -58,7 +58,7 @@ def target_parser(inp):
 	if reg_target:
 		target_clean=reg_target.group().split(' ')[2]
 	else:
-		print("No targets specified")
+		print("I'm here")
 		return "Error","No targets specified"
 	reg_comma = re.search(",",reg_target.group())
 	if reg_comma:
