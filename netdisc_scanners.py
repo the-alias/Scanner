@@ -30,12 +30,12 @@ def check_alive_sample(ips,level):
 		tmp=[]
 		for i in f.readlines():
 			tmp.append(int(i))
-		lvl_list=[
+	lvl_list=[
 		[22,445,53,80,443],
 		tmp[0:50],
 		tmp,
 		list(range(1,65535))
-		]
+	]
 	sample_alive_list=[]
 	sample_dead_list=[]
 	ans,unans = sr(IP(dst=ips)/
