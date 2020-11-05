@@ -25,6 +25,7 @@ def cli(inp):
 	ips,ports=target_parser(inp)
 	if ips=="Error":
 		print("No targets specified",help_msg)
+		sys.exit()
 	reg_help = re.search("\s-h",inp)
 	reg_half_open= re.search("\s-S",inp)
 	reg_full_open  = re.search("\s-F",inp)
