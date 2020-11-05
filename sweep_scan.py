@@ -56,9 +56,9 @@ def main():
 		print("No targets specified")
 		sys.exit()
 	ping_live,ping_dead = check_alive_ping(ips)
-	print(ping_live,ping_dead)
-	sample_live,sample_dead = check_alive_sample(ping_dead,1)
-	print(sample_live,sample_dead)
+	#print(ping_live,ping_dead)
+	#sample_live,sample_dead = check_alive_sample(ping_dead,1)
+	#print(sample_live,sample_dead)
 	#cli(user_input)
 ############################################################################
 if __name__ == '__main__':
