@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-from port_scanners,netdisc_scanners,data_set_parsers import *
+from port_scanners import *
+from netdisc_scanners import *
+from data_set_parsers import *
 import sys,re
 ############################################################################
 def cli(inp):
