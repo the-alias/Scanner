@@ -23,6 +23,8 @@ def cli(inp):
 #	try:
 	#Regex for each option in the help menu, all are mutually exclusive
 	ips,ports=target_parser(inp)
+	if ips=="Error":
+		print("No targets specified",help_msg)
 	reg_help = re.search("\s-h",inp)
 	reg_half_open= re.search("\s-S",inp)
 	reg_full_open  = re.search("\s-F",inp)

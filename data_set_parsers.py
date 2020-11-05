@@ -57,6 +57,9 @@ def target_parser(inp):
 	reg_target = re.search("\s-t\s\S+",inp)
 	if reg_target:
 		target_clean=reg_target.group().split(' ')[2]
+	else:
+		print("No targets specified")
+		return "Error","No targets specified"
 	reg_comma = re.search(",",reg_target.group())
 	if reg_comma:
 		targets=target_clean.split(',')
