@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 from netaddr import *
-import socket
+import socket,re
 ############################################################################
 def porter(reg_port):
 	if reg_port:
